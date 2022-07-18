@@ -28,12 +28,4 @@ Whenever the user select a city in the list its current weather and forcast for 
 
 Clear stoarge button is given to clear all the inforamtion in the local storage .
 
-## Links
 
-Deployed site: https://kuleenabinoy.github.io/weatherDashboard/
-
-Github Repository:https://github.com/Kuleenabinoy/weatherDashboard
-
-## Screenshots
-
-![weather](https://user-images.githubusercontent.com/86656634/136651777-3903b138-0ddc-4c38-af32-4d954b070bd6.png)
