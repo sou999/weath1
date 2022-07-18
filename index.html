@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>WeatherDashboard</title>
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+            integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+            crossorigin="anonymous"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400&family=Merriweather:wght@700&display=swap"
+            rel="stylesheet"
+        />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+        <link rel="stylesheet" href="./assets/jass.css" />
+        <link rel="stylesheet" href="./assets/style.css" />
+    </head>
+    <body>
+        <header>
+            <div class="container-fluid bg-primary text-white text-center">
+                <h1><strong>Weather Dashboard</strong></h1>
+            </div>
+        </header>
+        <div class="container">
+            <div class="row">
+                <div id="leftcoloum" class="col-md-3 searchcoloum">
+                    <form>
+                        <h3>Search for a city</h3>
+                        <input type="text" id="cityName" placeholder="Enter City" />
+                        <button type="submit" id="submitBtn" class="btn btn-primary fas fa-search"></button>
+                    </form>
+
+                    <div id="list1" class="list list-group">
+                        <h3>Previous Searches:</h3>
+                    </div>
+                    <button id="clearBtn">Clear Searches</button>
+                </div>
+
+                <div class="col-md-9" id="weatherContainer">
+                    <div id="currentWeather" class="bg-primary text-white">
+                        <h3>Current Weather</h3>
+                        <h4 id="currentCity"></h4>
+                        <p id="date"></p>
+                        <img id="iconC" />
+                        <p id="maxtemp">Temp:<span id="temp"></span></p>
+                        <p id="humidity">Humidity:<span id="humd"></span></p>
+                        <p id="uvindex">UV Index:<span id="uvcolor"></span></p>
+                        <p id="windspeed">Wind Speed:<span id="wind"></span></p>
+                    </div>
+                    <div class="row gutters" id="fivedayForcast">
+                        <!--Day 1-->
+                        <div class="col">
+                            <div class="card forecast">
+                                <div class="card-body bg-primary text-white">
+                                    <p class="date1"></p>
+                                    <img class="icon1" />
+                                    <p class="temp1">Temp:<span id="temp1"></span></p>
+                                    <p class="humd1">Humidity:<span id="humd1"></span></p>
+                                    <p class="wind1">Wind Speed:<span id="wind1"></span></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Day 2-->
+                        <div class="col">
+                            <div class="card forecast">
+                                <div class="card-body bg-primary text-white">
+                                    <p class="date2"></p>
+                                    <img class="icon2" />
+                                    <p class="temp2">Temp:<span id="temp2"></span></p>
+                                    <p class="humd2">Humidity:<span id="humd2"></span></p>
+                                    <p class="wind2">Wind Speed:<span id="wind2"></span></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card forecast">
+                                <div class="card-body bg-primary text-white">
+                                    <p class="date3"></p>
+                                    <img class="icon3" />
+                                    <p class="temp3">Temp:<span id="temp3"></span></p>
+                                    <p class="humd3">Humidity:<span id="humd3"></span></p>
+                                    <p class="wind3">Wind Speed:<span id="wind3"></span></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card forecast">
+                                <div class="card-body bg-primary text-white">
+                                    <p class="date4"></p>
+                                    <img class="icon4" />
+                                    <p class="temp4">Temp:<span id="temp4"></span></p>
+                                    <p class="humd4">Humidity:<span id="humd4"></span></p>
+                                    <p class="wind4">Wind Speed:<span id="wind4"></span></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card forecast">
+                                <div class="card-body bg-primary text-white">
+                                    <p class="date5"></p>
+                                    <img class="icon5" />
+                                    <p class="temp5">Temp:<span id="temp5"></span></p>
+                                    <p class="humd5">Humidity<span id="humd5"></span></p>
+                                    <p class="wind5">Wind Speed:<span id="wind5"></span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./assets/script.js"></script>
+    </body>
+</html>

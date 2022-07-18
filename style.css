@@ -1,0 +1,55 @@
+body {
+    font-family: "Fira Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+}
+header {
+    width: 100%;
+    height: 40px;
+}
+.container {
+    max-width: 1300px;
+}
+.searchColumn {
+    background-color: #eee;
+}
+h3 {
+    padding-top: 10px;
+    font-weight: 600;
+}
+#currentWeather {
+    margin: 15px 0 15px 0;
+    padding: 15px;
+}
+
+li{
+    list-style: none;
+}
+li:hover{
+    background-color: lightslategray;
+    text-decoration: underline;
+}
+#leftcoloum{
+    border:2px solid black;
+    margin-top: 10px;
+    border-radius: 5px;
+    
+    
+}
+#weatherContainer{
+    border:2px solid black;
+    margin-top: 10px;
+    border-radius: 5px;
+    
+}
+#fivedayForcast{
+    margin-left:5px;
+}
